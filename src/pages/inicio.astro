@@ -1,0 +1,28 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const name = 'Jesus Mauricio Piste Ek';
+const message = 'Bienvenido a tu aplicación personalizada. Disfruta la experiencia moderna que hemos creado para ti.';
+---
+
+<Layout>
+  <main class="flex items-center justify-center min-h-screen bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500 text-white px-4">
+    <div class="relative bg-white/10 backdrop-blur-xl rounded-3xl shadow-2xl p-10 max-w-xl w-full animate-fade-in">
+      <div class="absolute top-0 left-0 w-full h-1 rounded-t-3xl bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600"></div>
+      
+      <h1 class="text-5xl font-extrabold text-white drop-shadow mb-4 text-center tracking-tight">
+        {name}
+      </h1>
+      
+      <p class="text-lg font-light text-white/90 text-center mb-6">
+        {message}
+      </p>
+
+      <div class="flex justify-center">
+        <a href="/" class="px-6 py-2 bg-white text-indigo-600 font-semibold rounded-full shadow-lg hover:bg-gray-100 transition duration-300">
+          Ir al inicio
+        </a>
+      </div>
+    </div>
+  </main>
+</Layout>
